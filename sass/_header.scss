@@ -1,0 +1,165 @@
+.header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    background-color: $color_white;
+    @media screen and (min-width: $desktop1440) {
+        height: 130px;
+      }
+}
+
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+    @media screen and (max-width: 1439px) {
+       width: 90px;
+      }
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-menu__list {
+    @media screen and (max-width: 1439px) {
+        &:first-child{
+            margin-top: 10px;
+        }
+            margin-bottom: 10px;
+      }
+    @media screen and (min-width: $desktop1440) {
+        &:not(:first-child){
+            margin-left: 80px;
+        }
+      }
+}
+.underline{
+  @media screen and (min-width: $desktop1440) {
+    position: relative;
+  }
+  
+}
+.underline::before{
+  @media screen and (min-width: $desktop1440) {
+    content: '';
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: $color_accent;
+  }
+  
+}
+
+.header-menu__link {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 41px;
+    color: inherit;
+    
+    &:hover,
+    &:focus {
+    color: $color_accent;
+    }
+}
+
+// Styles for mobile menu
+.header-buttonBurger {
+    position: relative;
+    z-index: 8;
+    width: 22px;
+    height: 22px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    fill: $color_accent;
+    @media screen and (min-width: $desktop1440) {
+      display: none;
+    }
+  
+    .header-buttonBurger__close {
+      display: none;
+      fill: $color_accent;
+    }
+  }
+  
+  
+  .header-buttonBurger.is-open .header-buttonBurger__close {
+    display: block;
+    fill: $color_accent;
+  }
+  
+  .header-buttonBurger.is-open .header-buttonBurger__burger {
+    display: none;
+  }
+  
+  .header-menu {
+    padding: 0;
+    margin: 0 0 0 250px;
+                  
+      @media screen and (min-width: $desktop1440) {
+        display: flex;
+      }
+      @media screen and (max-width: 1439px) {
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        z-index: 7;
+    
+        display: none;
+        width: 100%;
+        height: auto;
+        background-color: $color_white;
+        text-align: center;
+        
+        &.is-open {
+          display: block;
+        }}
+                  
+  }
+
+  .header-contact {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .header-contact__tel {
+    margin-bottom: 15px;
+  }
+
+  .header-contact__tel--link{
+    color: black;
+
+    &:hover,
+    &:focus {
+      color: $color_accent;   
+    }
+  }
+
+  .header-contact__tel--icon {
+    &:hover,
+    &:focus {
+      fill: $color_accent;
+    }
+  }
+
+  .header-contact__adress{
+    font-style: normal;
+  }
+
+  .header-contact__tel--icon,
+  .header-contact__adress--icon {
+    fill: black;
+    margin-right: 10px;
+  }

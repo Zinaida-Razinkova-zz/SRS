@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;500&family=Merienda+One&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Sarasvati - школа массажа в Харькове</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper container">
+      <nav class="header-nav">
+        <a class="header-logo" href=""><img src="./images/logo.png" alt="Logo Sarasvati" width="143" height="110"></a>
+        <button class="header-buttonBurger"
+          aria-expanded="false"
+          type="button"
+          data-menu-button>
+        <svg width="22" height="22" aria-label="Mobile menu">
+          <use class="header-buttonBurger__close" href="./images/sprite.svg#burgerclose"></use>
+          <use class="header-buttonBurger__burger" href="./images/sprite.svg#burgermenu"></use>
+        </svg>
+        </button>
+        <ul class="header-menu" data-menu>
+         <li class="header-menu__list"><a class="header-menu__link" href="index.html">Главная</a></li>
+         <li class="header-menu__list"><a class="header-menu__link" href="courses.html">Курсы</a></li>
+         <li class="header-menu__list underline"><a class="header-menu__link" href="teachers.html">Преподаватели</a></li>
+         <li class="header-menu__list"><a class="header-menu__link" href="contacts.html">Контакты</a></li>
+       </ul>
+      </nav>
+      <ul class="header-contact">
+        <li class="header-contact__tel">
+          <a class="header-contact__tel--link" href="tel:+380992901616" >
+            <svg class="header-contact__tel--icon" width="16px" height="16px">
+              <use href="./images/sprite.svg#smartphone"></use>
+            </svg>+38(099)290-16-16</a>
+        </li>
+        <li>
+         <address class="header-contact__adress"><svg class="header-contact__adress--icon" width="16px" height="16px">
+          <use href="./images/sprite.svg#location"></use>
+        </svg>Украина, Харьков</address>
+        </li>
+      </ul>
+      </div>
+    </header>
+      <main>
+<section class="transform">
+  <div class="container">
+    <h2 class="transform-title title">Преподаватели школы Тайского массажа <br> Sarasvati</h2>
+    <h3 class="transform-subtitle text">"Твой учитель не тот, кто тебя учит, а тот, у кого учишься ты.”</h3>
+  <div class="transform-row">
+    <img class="transform-row__img transform-row__img--left" src="./images/t02.jpg" alt="Елена Ткаченко" width="500">
+    <div>
+      <h2 class="transform-row__paragraf paragraf">Елена Ткаченко</h2>
+      <h3 class="transform-row__text text">Основатель и руководитель Школы Тайского массажа Елены Ткаченко и студии массажа «МАК». 
+        Мастер Тайского массажа, сертифицированный в Таиланде (2009-2017). 
+        Судья международных чемпионатов по SPA-массажу (Украина, Франция). 
+        Имеет высшее педагогическое образование (Украина, Харьковский Национальный Университет имени  Г. Сковороды). 
+        Также прошла продвинутый международный курс в Институте Тибетской Медицины и Астрологии при Далай Ламе XIV.
+        </h3>
+      <button class="button" type="button">Learn More</button>
+    </div>
+  </div>
+  <div class="transform-row">
+    <div>
+      <h2 class="transform-row__paragraf paragraf">Евгений Шабанов</h2>
+      <h3 class="transform-row__text text">Преподаватель Школы Тайского массажа Елены Ткаченко, курс Тайский массаж стоп сосновами рефлексологии. 
+        В 2013 году прошёл обучение в Таиланде.
+        Участник международного чемпионата MASSAGE BATTLE PRESTIGE.
+        Выпускник Школы Тайского массажа Елены Ткаченко. 
+        Окончил курсы: 
+        - Традиционный Тайский массаж, базовый и углублённый уровни; 
+        - Тайский aroma-oil массаж; 
+        - Тайский массаж стоп с основами рефлексологии.  
+        Имеет высшее образование (Украина, ХНУРЭ).</h3>
+      <button class="button" type="button">Learn More</button>
+    </div>
+    <img class="transform-row__img transform-row__img--right" src="./images/t01.jpg" alt="Евгений Шабанов" width="500">
+  </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-menu">
+        <li class="footer-menu__list"><a class="footer-menu__link" href="index.html">Главная</a></li>
+        <li class="footer-menu__list"><a class="footer-menu__link" href="courses.html">Курсы</a></li>
+        <li class="footer-menu__list"><a class="footer-menu__link" href="teachers.html">Преподаватели</a></li>
+        <li class="footer-menu__list"><a class="footer-menu__link" href="timetable.html">Расписание</a></li>
+        <li class="footer-menu__list"><a class="footer-menu__link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <div class="social">
+        <a class="social__fb" href="https://www.facebook.com/sarasvatimassageschool/"><svg width="55" height="55"><use class="social__icon" href="./images/sprite.svg#facebook"></use></svg></a>    
+        <a class="social__in" href="https://www.instagram.com/sarasvati_massage/"><svg width="55" height="55"><use class="social__icon" href="./images/sprite.svg#instagram"></use></svg></a>
+        <a class="social__tg" href="https://t.me/SarasvatiMassageSchool"><svg width="55" height="55"><use class="social__icon" href="./images/sprite.svg#telegram"></use></svg></a>
+      </div>
+    </div>
+  </footer>
+ 
+  <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.contact-section {
+    padding: 30px 0px 30px 0px;
+    @media screen and (max-width: $mobile425) {
+      padding: 50px 0px 0px 0px;
+    }
+  }
+.contact-title {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+  .contact-map {
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+    @media screen and (max-width: 425px) {
+      // width: 250px;
+      min-height: 300px;
+    }
+  }
+.contact-text{
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.contact-wrapper {
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contact-modal{
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }

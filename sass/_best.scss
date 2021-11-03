@@ -1,0 +1,118 @@
+.best {
+    padding: 120px 0 160px 0;
+    // background-color: $color_accent;
+    // background-image: url(../images/best-overlay.png);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+
+    @media screen and (min-width: 1940px) {
+        padding: 80px 0 80px 0;
+        }
+}
+
+.best-title {
+    margin: 0 0 22px 0;
+    text-align: center;
+    @media screen and (max-width: 1439px) {
+        margin: 0 0 10px 0;
+        font-size: 38px;
+        }
+}
+
+.best-subtitle {
+    max-width: 1105px;
+    margin: 0 auto 70px auto;
+    text-align: center;
+    @media screen and (max-width: 1439px) {
+        margin: 0 auto 30px auto;
+        }
+    }
+
+.best-content {
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        justify-content: space-between;
+      }
+    
+}
+
+// .best-column:not(:last-child){
+// margin-right: 50px;
+// }
+
+.best-row {
+    position: relative;
+    max-width: 597px;
+    min-height: 200px;
+    border-radius: 15px;
+    &:not(:last-child){
+        margin-bottom: 100px;
+    }
+    @media screen and (max-width: 1439px) {
+        min-height: 150px;
+        margin: 0px auto;
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+      }
+}
+
+.best-row__left {
+    padding: 25px 40px 25px 79px;
+    text-align: right;
+    background: linear-gradient(270deg, #C3EEE8 26.37%, rgba(195, 226, 222, 0.75) 63.87%, rgba(231, 243, 242, 0.4) 103.6%);
+    @media screen and (max-width: 1919px) {
+        padding: 20px 30px 20px 30px;
+        }
+}
+
+.best-row__left::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(to right, #edfbf9 , #01574b);
+    border-radius: 15px;
+    z-index: -1;
+}
+.best-row__right {
+    padding: 25px 79px 25px 40px;
+    background: linear-gradient(90deg, #C3EEE8 26.37%, rgba(195, 226, 222, 0.75) 63.87%, rgba(231, 243, 242, 0.4) 103.6%);
+    text-align: left;
+    @media screen and (max-width: 1919px) {
+        padding: 20px 30px 20px 30px;
+        }
+}
+.best-row__right::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    z-index: -1;
+    background: linear-gradient(to right, #01574b, #edfbf9 );
+    border-radius: 15px;
+    
+}
+
+.best-row__paragraf {
+    margin: 0 0 15px 0;
+    color: $color_dark;
+    @media screen and (max-width: 1919px) {
+        font-size: 24px;
+        }
+}
+.best-row__text {
+    margin: 0;
+}
+
+.best-img {
+    margin: 0 45px 0 70px;
+    @media screen and (max-width: 1439px) {
+        margin: 30px auto;
+      }
+}

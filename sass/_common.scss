@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font_basic;
+  background: $color_basic;
+  color: $color_black;
+  .container {
+    margin: 0px auto;
+    width: 100%;
+    @media screen and (min-width: $desktop1920 + 1px) {
+      max-width: $desktop1920;
+      padding: 0px 150px 0px 150px;
+    }
+    @media screen and (max-width: $desktop1920) {
+      max-width: $desktop1920;
+      padding: 0px 150px 0px 150px;
+    }
+    @media screen and (max-width: $desktop1440) {
+      max-width: $desktop1440;
+      padding: 0px 100px 0px 100px;
+    }
+    @media screen and (max-width: $desktop1024) {
+      max-width: $desktop1024;
+      padding: 0px 60px 0px 60px;
+    }
+    @media screen and (max-width: $tablet768) {
+      max-width: $tablet768;
+      padding: 0px 25px 0px 25px;
+    }
+    @media screen and (max-width: $mobile425) {
+      max-width: $mobile425;
+      padding: 0px 15px 0px 15px;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.title {
+  font-family: Merienda One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 130%;
+  color: $color_black;
+  text-align: center;
+}
+
+.text {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+  color: $color_medium;
+
+  @media screen and (max-width: $desktop1920 -1px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+  }
+}
+
+.paragraf {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 146%;
+}
+
+.button,
+.products-column__link {
+  margin: 0;
+  padding: 12px 44px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+
+  text-align: center;
+  color: $color_white;
+  background: $color_accent2;
+  box-shadow: 0px 13px 28px rgba(26, 127, 114, 0.2);
+  border-radius: 30px;
+  border: 1px solid transparent;
+  
+
+  &:hover,
+  &:focus {
+  color: $color_accent;
+  background: $color_white;
+  border: solid 1px $color_accent;
+  }
+
+  @media screen and (max-width: 1439px) {
+      padding: 12px 30px;
+      font-size: 18px;
+    }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  }
+  
+  .social__fb,
+  .social__in {
+      margin-right: 30px;
+  }
+  
+  .social__icon {
+    fill: $color_basic;
+      &:hover,
+      &:focus {
+      fill: $color_accent;
+      }
+  }
